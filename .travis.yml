@@ -1,22 +1,27 @@
 language: ruby
 
 rvm:
-- 2.1
+  - 2.2
 
-before_script:
- - chmod +x ./build/build.sh
+before_install:
+  - npm install -g bower
 
-script: ./build/build.sh
+install:
+  - bundle install
+  - bower install
+
+script:
+  - bundle exec jekyll server
+
+notifications:
+  email: false
+  slack:
+    matrix:
+    - estudio-fox:05GZeEDQYL8cq5sHgYSsyr9J
+    rooms:
+      secure: IMhNzSTpb7AKbFpn0IGkm9LtvbgW5bnKKZ2htVut27iio8yrylsTl/EwRvie1K7yX8ilWWKlmxnAPE94HPdcoTJV66+a1LzseYE0fC5DZP50CSJIY481Lq7wQyPVShxwoNEX9mmi5aZ2ZgD094vGOlYHd8IxAe1ksYhjbor0nVpBpgJdg+OfVcplisdCzAzsinrOog6B9mzQqdxM/fn88ZojHNuEX4H4PjMeShc98aK+81ZsnUZeJO+Syj1SQEeW/aQJGGNyfabOmfVliwVp+T8Cks1foNo5iDVAyv14e+Mm3jo/LD+GSWTU20W/umCwe16P9va4h6VPBLIPP4FQ7EAiQ2nr47DVAZmUrk68AYwE2kPGaFSBjVwpaix3tISShOrgdUOZUPFAma9KrcaE2afGuw0wo+FUbxWFxMqDly0aRZ7Dp86xYXPDYjBzyogVxBC1zLlS3vuyVYXZ8T0Q63iy5ZPZ+tI0BNGz3IHngIVn5kRhuMQtMXWYgg2bC7iPu5uBb+8ZcetzhmLLck2ltle+bKc5+Qqnjwz0h9QQqw/od8JW9coOoc82slePcVoqj6u3ZMyJGEDqbVcoiqb4erq1XZNYi6VNP1CkLOajorAubEMogshCs/SPhRZKBcc/ydaPx4OyeOJWgzCQGB5BTvZ2r7P44cHYWYS7nxITjOw=
 
 branches:
   only:
-  - gh-pages     # test the gh-pages branch
-  - /pages-(.*)/ # test every branch which starts with "pages-"
-
-env:
-  global:
-  - NOKOGIRI_USE_SYSTEM_LIBRARIES=true
-
-exclude: [vendor]
-
-sudo: false
+    - develop
+    - gh-pages
