@@ -1,4 +1,4 @@
-@import "general/variables";
+@import "general/nw-variables";
 
 @import "bootstrap-sprockets";
 @import "bootstrap";
@@ -6,4 +6,6 @@
 @import "font-awesome-sprockets";
 @import "font-awesome";
 
+@import "general/nw-custom-bootstrap";
 @import "components/nw-header";
+@import "components/nw-view-github";
