@@ -1,0 +1,17 @@
+$nw-main-green: #89C64A;
+$nw-main-black: #2A2A2A;
+$nw-main-white: #E9E9E9;
+$nw-main-white-light: lighten( $nw-main-white, 5 );
+$nw-main-orange: #e67e22;
+$nw-border-radius: 2px;
+
+$nw-font-stack: 'Open Sans', sans-serif;
+
+// bootstrap custom
+$brand-primary: $nw-main-green;
+$btn-font-weight: 100;
+$font-family-sans-serif: $nw-font-stack;
+$btn-primary-border: $brand-primary;
+$border-radius-base: $nw-border-radius;
+$border-radius-large: $nw-border-radius;
+$border-radius-small: $nw-border-radius;
