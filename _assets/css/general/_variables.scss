@@ -1,0 +1,12 @@
+$nw-main-green: #89C64A;
+$nw-main-black: #2A2A2A;
+$nw-main-white: #E9E9E9;
+$nw-main-white-light: lighten( $nw-main-white, 5 );
+$nw-main-orange: #e67e22;
+
+$font-stack: 'Open Sans', sans-serif;
+
+
+// bootstrap custom
+$brand-primary: $nw-main-green;
+$font-family-sans-serif: $font-stack;
