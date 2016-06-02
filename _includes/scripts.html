@@ -1,0 +1,9 @@
+{% javascript nw-custom.js %}
+
+{% for js in page.js %}
+	{% javascript '{{ js }}.js' %}
+{% endfor %}
+
+<script>
+	nw.init();
+</script>
