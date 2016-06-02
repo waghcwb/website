@@ -1,0 +1,23 @@
+.nw-header {
+	$header-font-size: 1.5em;
+
+	background-color: $nw-main-black;
+	text-align: center;
+	padding: ( $header-font-size * 1.5 ) 0;
+	font-size: 1.5em;
+	border-bottom: 4px solid $nw-main-green;
+	box-shadow: #fff 0 1px 0;
+}
+
+.nw-logo {
+	font-weight: normal;
+
+	a {
+		color: $nw-main-green;
+		text-decoration: none;
+
+		strong {
+			color: $nw-main-white;
+		}
+	}
+}
