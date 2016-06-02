@@ -1,9 +1,11 @@
 title: nw.js
 email: wagh.cwb@gmail.com
-description: nw.js concept website
+description: build awesome cross platforms apps with front-end technologies
 baseurl: ""
 url: http://nwjs.io
 markdown: kramdown
+
+github: nwjs/nw.js
 
 gems:
   - jekyll-assets
