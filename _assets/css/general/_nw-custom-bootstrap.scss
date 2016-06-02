@@ -1,6 +1,9 @@
 .btn {
-	text-transform: uppercase;
 	transition: ease-in-out .2s background-color;
 	font-size: 1em;
 	border: none;
+
+	&:not( .btn-link ) {
+		text-transform: uppercase;
+	}
 }
