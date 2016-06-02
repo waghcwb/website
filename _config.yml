@@ -1,7 +1,19 @@
 title: nw.js
 email: wagh.cwb@gmail.com
-description: >
-  just a concept
+description: nw.js concept website
 baseurl: ""
-url: "http://nwjs.io"
+url: http://nwjs.io
 markdown: kramdown
+
+gems:
+  - jekyll-assets
+
+assets:
+  # cache: false
+  prefix: /assets
+  digest: true
+  sources:
+    - _assets/img
+    - _assets/js
+    - _assets/css
+    - bower_components/
