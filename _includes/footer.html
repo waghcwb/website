@@ -1,14 +1,21 @@
-<footer class="nw-footer container">
-	<ul class="nav nav-pills pull-right">
-		<li>
-			<a href="{{ "/feed.xml" | prepend: site.baseurl }}">
-				<i class="fa fa-rss"></i>
-			</a>
-		</li>
-		<li>
-			<a href="https://www.github.com/{{ site.github }}">
-				<i class="fa fa-github"></i>
-			</a>
-		</li>
-	</ul>
+<footer class="nw-footer">
+	<section class="container">
+		<ul class="nav nav-pills pull-left">
+			<li>
+				{% include components/logo.html %}
+			</li>
+		</ul>
+		<ul class="nav nav-pills pull-right">
+			<li>
+				<a href="{{ "/feed.xml" | prepend: site.baseurl }}">
+					<i class="fa fa-rss"></i>
+				</a>
+			</li>
+			<li>
+				<a href="https://www.github.com/{{ site.github }}">
+					<i class="fa fa-github"></i>
+				</a>
+			</li>
+		</ul>
+	</section>
 </footer>
