@@ -2,20 +2,26 @@
 layout: default
 ---
 
-<section class="nw-main container">
-    <div class="page-header">
-        <h3>Blog</h3>
-    </div>
-    <div class="row">
-        {% for post in site.posts %}
-            <div class="col-md-6">
-                <div class="panel panel-default">
-                    <div class="panel-heading">{{ post.title }} -  <small>{{ post.date | date: "%b %-d, %Y" }}</small></div>
-                    <div class="panel-body">
-                        <a href="{{ post.url | prepend: site.baseurl }}" class="btn btn-link pull-right">Read more</a>
+<main class="nw-main">
+    {% include components/welcome.html %}
+    {% include components/separator.html %}
+    {% include components/view-github.html %}
+    
+    <section class="container">
+        <div class="page-header">
+            <h3>Blog</h3>
+        </div>
+        <div class="row">
+            {% for post in site.posts %}
+                <div class="col-md-6">
+                    <div class="panel panel-default">
+                        <div class="panel-heading">{{ post.title }} -  <small>{{ post.date | date: "%b %-d, %Y" }}</small></div>
+                        <div class="panel-body">
+                            <a href="{{ post.url | prepend: site.baseurl }}" class="btn btn-link pull-right">Read more</a>
+                        </div>
                     </div>
                 </div>
-            </div>
-        {% endfor %}
-    </div>
-</section>
+            {% endfor %}
+        </div>
+    </section>
+</main>

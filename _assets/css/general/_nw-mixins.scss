@@ -1,0 +1,23 @@
+@mixin flex-center() {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+@mixin full-absolute() {
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+}
+
+@mixin visual-hidden() {
+	opacity: 0;
+	visibility: hidden;
+}
+
+@mixin visual-show() {
+	opacity: 1;
+	visibility: visible;
+}
