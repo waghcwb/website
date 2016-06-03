@@ -1,4 +1,5 @@
 @import "general/nw-variables";
+@import "general/nw-mixins";
 
 @import "bootstrap-sprockets";
 @import "bootstrap";
@@ -7,5 +8,7 @@
 @import "font-awesome";
 
 @import "general/nw-custom-bootstrap";
+
 @import "components/nw-header";
+@import "components/nw-welcome";
 @import "components/nw-view-github";
