@@ -5,6 +5,7 @@ welcome-message: node webkit is an app runtime based on <a href="https://www.chr
 baseurl: ""
 url: http://nwjs.io
 markdown: kramdown
+destination: _deploy
 
 github: nwjs/nw.js
 
