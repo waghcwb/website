@@ -1,0 +1,25 @@
+<section class="nw-welcome">
+	<section class="container">
+		<div class="row">
+			<div class="col-md-12">
+				<p class="text-center text-primary">
+					{{ site.welcome-message }}
+				</p>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-md-3 clearfix">
+				{% include components/welcome-item.html label="Quick Start" link="#" icon="ion-android-laptop" %}
+			</div>
+			<div class="col-md-3 clearfix">
+				{% include components/welcome-item.html label="Downloads" link="#" icon="ion-code-download" %}
+			</div>
+			<div class="col-md-3 clearfix">
+				{% include components/welcome-item.html label="Blog" link="#" icon="ion-chatbox" %}
+			</div>
+			<div class="col-md-3 clearfix">
+				{% include components/welcome-item.html label="Documentation" link="#" icon="ion-document-text" %}
+			</div>
+		</div>
+	</section>
+</section>

@@ -1,0 +1,90 @@
+.nw-welcome {
+	background-color: $nw-main-white;
+	padding: 1em 0;
+
+	.nw-welcome-item {
+		background-color: $nw-main-white-light;
+		margin: 1em 0;
+		border-radius: $border-radius-base;
+		position: relative;
+		height: 17em;
+
+		a {
+			@include flex-center;
+			@include full-absolute;
+
+			font-size: 2.3em;
+			transition: all ease-in-out .2s;
+
+			> span,
+			> i {
+				@include full-absolute;
+				@include flex-center;
+
+				transition: all ease-in-out .2s;
+				pointer-events: none;
+			}
+
+			> span {
+				left: -100%;
+				font-size: .5em;
+				font-weight: 100;
+
+				span {
+					@include visual-hidden;
+				}
+
+				left: -100%;
+				font-size: .5em;
+				font-weight: 100;
+
+
+				i {
+					@include visual-hidden;
+
+					transition: all ease-in-out .2s;
+					margin-right: .5em;
+					position: relative;
+					top: 0;
+					font-size: 1.5em;
+					right: -100%;
+					z-index: 999;
+					color: $nw-main-white;
+				}
+			}
+
+			&:hover {
+				background-color: $brand-primary;
+				color: $nw-main-white;
+			}
+
+			&:hover > i {
+				@include visual-hidden;
+			}
+
+			&:hover > span {
+
+				> span, i {
+					@include visual-show;
+				}
+
+				left: 0;
+
+				i {
+					right: 0;
+				}
+
+			}
+		}
+	}
+
+	p {
+		font-size: 1.5em;
+		font-weight: 100;
+		margin: 2em 0;
+	}
+}
+
+.nw-welcome + .nw-separator {
+	fill: $nw-main-white;
+}

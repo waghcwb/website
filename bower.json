@@ -1,0 +1,22 @@
+{
+  "name": "nw.js",
+  "homepage": "https://github.com/waghcwb/nw.js",
+  "authors": [
+    "w.souza <wagh.cwb@gmail.com>"
+  ],
+  "description": "nw.js concept website",
+  "main": "index.html",
+  "license": "MIT",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "jquery": "^2.2.4",
+    "jquery-migrate": "^1.4.0"
+  }
+}
