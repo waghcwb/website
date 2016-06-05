@@ -1,8 +1,7 @@
 _site
-
+_assets/vendor/
 .asset-cache
 .jekyll-metadata
 .sass-cache
 
-bower_components
 Gemfile.lock
