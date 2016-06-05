@@ -9,7 +9,10 @@ markdown: kramdown
 github: nwjs/nw.js
 
 gems:
+  - jekyll
   - jekyll-assets
+  - html-proofer
+  - bootstrap-sass
 
 assets:
   # cache: false
@@ -19,4 +22,4 @@ assets:
     - _assets/img
     - _assets/js
     - _assets/css
-    - bower_components/
+    - _assets/vendor
