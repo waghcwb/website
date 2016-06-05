@@ -45,7 +45,8 @@
 					transition: all ease-in-out .2s;
 					margin-right: .5em;
 					position: relative;
-					top: 2px;
+					top: 0;
+					font-size: 1.5em;
 					right: -100%;
 					z-index: 999;
 					color: $nw-main-white;
@@ -53,7 +54,7 @@
 			}
 
 			&:hover {
-				background-color: $nw-main-green;
+				background-color: $brand-primary;
 				color: $nw-main-white;
 			}
 
@@ -80,10 +81,10 @@
 	p {
 		font-size: 1.5em;
 		font-weight: 100;
+		margin: 2em 0;
 	}
 }
 
 .nw-welcome + .nw-separator {
 	fill: $nw-main-white;
-	margin-bottom: 2em;
 }

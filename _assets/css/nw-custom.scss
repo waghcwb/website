@@ -3,3 +3,22 @@
 .nw-wrapper {
 	overflow: hidden;
 }
+
+.nw-subtitle {
+	position: relative;
+
+	&::before {
+		content: " ";
+		width: 2em;
+		height: 2px;
+		background-color: $brand-primary;
+		position: absolute;
+		bottom: -.2em;
+	}
+
+	&.nw-subtitle-right {
+		&::before {
+			right: 0;
+		}
+	}
+}

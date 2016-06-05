@@ -1,0 +1,15 @@
+.nw-features {
+	border-top: $nw-main-white 1px solid;
+
+	.nw-features-item {
+		.nw-features-item-title {
+			display: inline-block;
+			border-bottom: $brand-primary 2px solid;
+			padding-bottom: .3em;
+			margin-bottom: .3em;
+			width: 2em;
+			height: 2em;
+			line-height: 2em;
+		}
+	}
+}

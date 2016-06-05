@@ -1,0 +1,11 @@
+.nw-footer {
+	background-color: $nw-main-black;
+	border-top: 4px solid $brand-primary;
+	box-shadow: #fff 0 -1px 0;
+	padding: 3em 0 2em;
+
+	.nw-logo {
+		font-size: 1.3em;
+		margin: 0;
+	}
+}
