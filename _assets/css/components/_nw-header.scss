@@ -10,6 +10,28 @@
 	> .container {
 		height: 100%;
 	}
+
+	.nw-logo-wrapper {
+		position: absolute;
+		width: 100px;
+		margin: 0 auto;
+		left: 0;
+		right: 0;
+		z-index: 99;
+	}
+}
+
+#nw-header-background {
+	canvas {
+		-webkit-user-select: none;
+		    moz-user-select: none;
+			-ms-user-select: none;
+				user-select: none;
+		position: absolute;
+		height: $header-height !important;
+		top: 0;
+		left: 0;
+	}
 }
 
 .nw-logo {
@@ -18,11 +40,9 @@
 	height: 100%;
 
 	a {
-		display: block;
 		color: $brand-primary;
 		text-decoration: none;
 		font-weight: 100;
-		height: 100%;
 		line-height: calc( #{$header-height} / 2 );
 
 		strong {
