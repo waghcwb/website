@@ -10,6 +10,7 @@ $nw-main-white-light: lighten( $nw-main-white, 5 );
 $nw-main-orange: #e67e22;
 
 // heights
+$header-height: 10em;
 $nw-button-height: 50px;
 
 // border-radius
@@ -17,6 +18,7 @@ $nw-border-radius: 2px;
 
 // fonts
 $nw-font-stack: 'Open Sans', sans-serif;
+$header-font-size: 1.5em;
 
 // icon
 $nw-button-icon-gutter: $nw-button-height / 3;
