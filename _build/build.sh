@@ -9,3 +9,5 @@ rm -rf $deployFolder &&
 
 bundle exec jekyll build &&
 bundle exec htmlproofer $deployFolder --disable-external
+
+exit 1
