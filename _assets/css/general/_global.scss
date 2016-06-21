@@ -15,3 +15,13 @@
 @import "components/nw-features";
 @import "components/nw-view-github";
 @import "components/nw-download";
+
+::selection {
+	background: $nw-main-green;
+	color: $nw-main-white;
+}
+
+::-moz-selection {
+	background: $nw-main-green;
+	color: $nw-main-white;
+}
