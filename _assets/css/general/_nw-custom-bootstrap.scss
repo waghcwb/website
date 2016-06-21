@@ -2,8 +2,13 @@
 	transition: ease-in-out .2s background-color;
 	font-size: 1em;
 	border: none;
+	box-shadow: 0 2px 2px 0 rgba( 0, 0, 0, .2 );
 
 	&:not( .btn-link ) {
 		text-transform: uppercase;
+	}
+
+	> i {
+		margin-right: .5em;
 	}
 }
