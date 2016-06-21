@@ -1,4 +1,4 @@
-_site
+_deploy
 _assets/vendor/
 .asset-cache
 .jekyll-metadata

@@ -1,21 +1,29 @@
 .nw-header {
-	$header-font-size: 1.5em;
-
 	background-color: $nw-main-black;
 	text-align: center;
 	padding: ( $header-font-size * 1.5 ) 0;
 	font-size: $header-font-size;
 	border-bottom: 4px solid $brand-primary;
 	box-shadow: #fff 0 1px 0;
+	height: $header-height;
+
+	> .container {
+		height: 100%;
+	}
 }
 
 .nw-logo {
+	margin: 0;
 	font-weight: normal;
+	height: 100%;
 
 	a {
+		display: block;
 		color: $brand-primary;
 		text-decoration: none;
 		font-weight: 100;
+		height: 100%;
+		line-height: calc( #{$header-height} / 2 );
 
 		strong {
 			color: $nw-main-white;

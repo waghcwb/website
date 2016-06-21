@@ -3,8 +3,10 @@ email: wagh.cwb@gmail.com
 description: build awesome cross platforms apps with front-end technologies
 welcome-message: node webkit is an app runtime based on <a href="https://www.chromium.org" target="_blank">Chromium</a> and <a href="https://nodejs.org" target="_blank">node.js</a>
 baseurl: ""
-url: http://nwjs.io
+url: http://dev.nwjs.io
+# url: http://nwjs.io
 markdown: kramdown
+destination: _deploy
 
 github: nwjs/nw.js
 
@@ -13,6 +15,8 @@ gems:
   - jekyll-assets
   - html-proofer
   - bootstrap-sass
+
+exclude: ["Gemfile*", "bower.json", "README.md"]
 
 assets:
   # cache: false

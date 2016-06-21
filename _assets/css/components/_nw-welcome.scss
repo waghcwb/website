@@ -8,6 +8,7 @@
 		border-radius: $border-radius-base;
 		position: relative;
 		height: 17em;
+		box-shadow: 0 2px 2px 0 rgba( 0, 0, 0, .05 );
 
 		a {
 			@include flex-center;
@@ -33,11 +34,6 @@
 				span {
 					@include visual-hidden;
 				}
-
-				left: -100%;
-				font-size: .5em;
-				font-weight: 100;
-
 
 				i {
 					@include visual-hidden;
@@ -83,8 +79,4 @@
 		font-weight: 100;
 		margin: 2em 0;
 	}
-}
-
-.nw-welcome + .nw-separator {
-	fill: $nw-main-white;
 }

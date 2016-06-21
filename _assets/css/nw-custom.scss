@@ -22,3 +22,47 @@
 		}
 	}
 }
+
+.nw-border-top {
+	border-top: $nw-main-white 1px solid;
+}
+
+.nw-separator {
+	fill: $nw-main-white;
+}
+
+.nw-bg-white-light {
+	&:not( .nw-separator ) {
+		background-color: $nw-main-white-light;
+	}
+
+	&.nw-separator {
+		fill: $nw-main-white-light;
+	}
+}
+
+.nw-button {
+	padding: 0;
+	height: $nw-button-height;
+
+	.nw-button-icon {
+		width: calc( 25% - 1px );
+		height: $nw-button-height;
+		padding: $nw-button-icon-gutter;
+		border-right: rgba( 255, 255, 255, .2 ) 1px solid;
+	}
+
+	.nw-button-content {
+		width: 75%;
+		height: $nw-button-height;
+		line-height: ( ( $nw-button-height - $nw-button-icon-gutter ) / 2 );
+	}
+
+	.nw-button-title,
+	.nw-button-subtitle {
+		padding: $nw-button-content-gutter 0;
+		display: block;
+		height: ( $nw-button-height ) - ( $nw-button-content-gutter * 2 );
+		line-height: $nw-button-height / 2;
+	}
+}
