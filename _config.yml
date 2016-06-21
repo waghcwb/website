@@ -3,7 +3,7 @@ email: wagh.cwb@gmail.com
 description: build awesome cross platforms apps with front-end technologies
 welcome-message: node webkit is an app runtime based on <a href="https://www.chromium.org" target="_blank">Chromium</a> and <a href="https://nodejs.org" target="_blank">node.js</a>
 baseurl: ""
-url: http://dev.nwjs.io
+url: http://0.0.0.0:4000
 # url: http://nwjs.io
 markdown: kramdown
 destination: _deploy

@@ -1,5 +1,11 @@
 #!/usr/bin/env bash
 set -e
 
-bundle exec jekyll build
-bundle exec htmlproofer ./_deploy --disable-external
+deployFolder="_deploy"
+
+cd ..
+
+rm -rf $deployFolder &&
+
+bundle exec jekyll build &&
+bundle exec htmlproofer $deployFolder --disable-external
