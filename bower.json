@@ -17,6 +17,7 @@
   ],
   "dependencies": {
     "jquery": "^2.2.4",
-    "jquery-migrate": "^1.4.0"
+    "jquery-migrate": "^1.4.0",
+    "gsap": "^1.18.5"
   }
 }
