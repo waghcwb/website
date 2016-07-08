@@ -2,12 +2,12 @@
 
 [![Build Status][Build Status Image]][Build Status]
 
-## Dependencies
+#### Dependencies
 ```sh
 bundle install && bower install
 ```
 
-## Execute server
+#### Execute server
 ```sh
 bundle exec jekyll server
 ```
